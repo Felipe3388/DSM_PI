@@ -1,0 +1,40 @@
+import InputTextClass from '@InputText.module.css';
+import { ChangeEvent } from 'react';
+import { Form } from 'react-bootstrap';
+ 
+interface InputTextProps {
+    label: string;
+    inputName: string;
+    placeholder?: string;
+    value?: string;
+    id?: string;
+    onChange?: (e: ChangeEvent<any>) => void
+    error?: string | undefined;
+    type?: string;
+   
+}
+ 
+ 
+ 
+export function InputText(props: InputTextProps) {
+ 
+    const {
+        label, inputName, placeholder,
+        value, id, onChange, error, }
+        = props;
+ 
+    return (
+        <>
+            <Form.Label htmlFor={id}>{label}</Form.Label>
+            &nbsp;
+            <Form.Control id={id} type="text" name={inputName}
+                placeholder={placeholder} value={value}
+                onChange={onChange}
+                isInvalid={!!error} ></Form.Control>
+ 
+            <Form.Control.Feedback type="invalid">
+                {error}
+            </Form.Control.Feedback>
+        </>
+    );
+}

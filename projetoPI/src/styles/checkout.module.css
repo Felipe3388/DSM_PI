@@ -1,0 +1,55 @@
+.checkout {
+    display: flex;
+    justify-content: start;
+    align-items: center;  
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 2rem;
+    margin-inline: auto;
+    margin-block: auto;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.tela{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-between;
+}
+.navbarra{
+    display: flex;
+    justify-content: space-between;
+}
+.barra{
+    display: flex;
+    background-color: orange;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    justify-content: space-between;
+}
+.tab{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.tabela {
+  border-collapse: collapse; /* une as bordas das células */
+}
+
+.thtd{
+  border: 1px solid #000; /* borda simples preta */
+  padding: 8px;
+  text-align: left;
+}
+.imagens{
+    width: 50px;
+}
+
+
+
+
